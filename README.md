@@ -1,8 +1,8 @@
 Web element carousel for wordpress
 
-
 functions.php - add to themes file
 
+```php
 function include_slider_code() {
     ob_start();
 
@@ -23,4 +23,4 @@ function include_slider_code() {
     return ob_get_clean(); 
 }
 
-add_shortcode( 'slider_code', 'include_slider_code' );
+add_shortcode('slider_code', 'include_slider_code');
